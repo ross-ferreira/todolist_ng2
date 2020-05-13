@@ -1,0 +1,13 @@
+<h1>To Do List:</h1>
+
+<!-- *ngFor == for looping through the array -->
+
+<!-- <ul *ngFor="let todo of todos">
+    <li> {{ todo.title }}</li>
+</ul> -->
+
+<!-- Now we want to update it using the new Todo-Item Component -->
+
+<app-todo-item *ngFor="let todo of todos" [todo]="todo">
+ 
+</app-todo-item> 
